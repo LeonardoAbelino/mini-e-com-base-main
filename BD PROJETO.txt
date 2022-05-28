@@ -1,0 +1,29 @@
+CREATE SCHEMA projeto;
+
+
+CREATE TABLE projeto.TBproduto ( 
+
+procodigo SERIAL NOT NULL, 
+
+prodescricao CHARACTER VARYING(100) NOT NULL, 
+
+protamanho CHARACTER VARYING(20) NOT NULL,  
+
+PRIMARY KEY (procodigo) 
+
+); 
+
+
+
+
+
+
+INSERT INTO projeto.tbproduto( 
+
+            prodescricao, protamanho) 
+
+    VALUES ('Camisa Nike', 'M'), 
+
+           ('Camisa Adidas', 'P'), 
+
+           ('Camisa Puma', 'G'); 
